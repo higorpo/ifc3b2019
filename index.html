@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Terceirão 2019</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            width: 305px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: transform 0.4s;
+        }
+
+        .grid-item:active {
+            transform: scale(2);
+            z-index: 9999;
+            transition: transform 0.4s;
+        }
+
+        h1,
+        h2,
+        p {
+            text-align: center;
+            font-family: 'Roboto';
+            margin: 0px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            font-family: 'Roboto';
+            color: black;
+            text-decoration: none;
+        }
+
+        nav a:active {
+            font-weight: bold;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1 style="margin-top: 30px;">Terceirão 2019</h1>
+    <h2 style="margin-bottom: 15px;">3° ano B</h2>
+
+    <nav>
+        <a href="#fotos">Fotos</a>
+        <a href="#alunos">Alunos</a>
+    </nav>
+
+    <div id="fotos" class="container">
+        <div class="grid">
+            <img class="grid-item" width="100%" src="1.jpg">
+            <img class="grid-item" width="100%" src="2.jpg">
+            <img class="grid-item" width="100%" src="3.jpg">
+            <img class="grid-item" width="100%" src="4.jpg">
+            <img class="grid-item" width="100%" src="5.jpg">
+            <img class="grid-item" width="100%" src="6.jpg">
+            <img class="grid-item" width="100%" src="7.jpg">
+            <img class="grid-item" width="100%" src="8.jpg">
+            <img class="grid-item" width="100%" src="9.jpg">
+            <img class="grid-item" width="100%" src="10.jpg">
+            <img class="grid-item" width="100%" src="11.jpg">
+            <img class="grid-item" width="100%" src="12.jpg">
+            <img class="grid-item" width="100%" src="13.jpg">
+            <img class="grid-item" width="100%" src="14.jpg">
+            <img class="grid-item" width="100%" src="15.jpg">
+            <img class="grid-item" width="100%" src="16.jpg">
+            <img class="grid-item" width="100%" src="17.jpg">
+            <img class="grid-item" width="100%" src="18.jpg">
+            <img class="grid-item" width="100%" src="19.jpg">
+            <img class="grid-item" width="100%" src="20.jpg">
+
+        </div>
+    </div>
+
+    <div style="margin-top: 20px;" id="alunos">
+        <h1>Alunos do 3B</h1>
+        <p>ADRIANO EMANUEL PEDROSO DO NASCIMENTO</p>
+        <p>ALAN PAULO DE SOUZA</p>
+        <p>ALISON DUARTE GABRIEL </p>
+        <p>CLARA SCHEFFER EMERICH</p>
+        <p>CRISTIELEN DA SILVEIRA MACHADO</p>
+        <p>DANIEL FONTANA PAULO</p>
+        <p>DIOGO RAULINO SANTOS</p>
+        <p>DYLAN BAUER DAVID </p>
+        <p>EDUARDA CARDOSO DA LUZ</p>
+        <p>EDUARDA WARTHA BORGES</p>
+        <p>ENDRIW VALERIO BARBOSA DA CUNHA</p>
+        <p>GABRIEL DE VARGAS COÊLHO</p>
+        <p>GUSTAVO BALTAZAR PEREIRA</p>
+        <p>HELEN BITENCOURT ALVES</p>
+        <p>HIGOR PIRES OLIVEIRA</p>
+        <p>IGOR DA ROSA VARGAS</p>
+        <p>ISADORA CRISTINA LIMA DE OLIVEIRA</p>
+        <p>JUAN CARLOS PACHECO DE SOUZA</p>
+        <p>JUAN PABLO DE LIMA TORESAN DA SILVEIRA</p>
+        <p>JÚLIO GABRIEL FELTRIN DA SILVA</p>
+        <p>KAROLINI MOTTA LUPIM</p>
+        <p>LARISSA SORATO MAGNUS</p>
+        <p>LEONARDO EIDT DE OLIVEIRA</p>
+        <p>LUANE BUENO DE OLIVEIRA</p>
+        <p>LUCAS FLORIANO GARCIA</p>
+        <p>NATAN ALEXANDRINO BARBOSA</p>
+        <p>NATHALIA HELEN MACHADO COÊLHO</p>
+        <p>OLIVIO BORGES DE SOUZA</p>
+        <p>PEDRO HENRIQUE DA ROSA</p>
+        <p>RAFAEL AMÉRICO FUHRICH</p>
+        <p>SAIMON DA SILVEIRA MACHADO</p>
+        <p>SANDRO LUIS DE MORAES FILHO</p>
+        <p>WINICIUS DAGOSTIN</p>
+        </p>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js'></script>
+
+    <script>
+        $(function () {
+            $('.grid').masonry({
+                isFitWidth: true,
+                itemSelector: '.grid-item',
+                gutter: 15
+            });
+        });
+    </script>
+</body>
+
+</html>
